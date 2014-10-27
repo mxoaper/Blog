@@ -1,3 +1,3 @@
 <?php
-echo "Web Server is Runnung Locally!";
+ require_once(__DIR__ . "/controller/create-db.php");
 ?>

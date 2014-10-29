@@ -1,4 +1,5 @@
 <?php  
+
  require_once(__DIR__ . "/../model/database.php");
 
  $connection = new mysqli($host, $username, $password);
@@ -8,9 +9,14 @@
  }
 
   $exists = $connection->select_db($database);
-
+    
    if (!$exists) {
-   	echo "Database does not exist";
+
+   	$query = $connection->query("CREATE DATABASE $database");
+
+   	if ($query) {
+	  echo "Successfully created a database: " . $database;     
+   	}
    }
 
  $connection->close();

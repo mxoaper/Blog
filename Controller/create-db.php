@@ -22,15 +22,18 @@
    else{
    	echo "Database already exists.";
    }
-
+// Created a query, and it creates a table
+// Tables name is Post
    $query = $connection->query("CREATE TABLE posts("
-
+    // THe ID is an integer and we don't have to worry about setting ids usinng AUTO_INCREMEMNT
+    // NONE OF THEM COULD BE NULL!!!
     . "id int(11) NOT NULL AUTO_INCREMENT,"
-
+    // The title is a string of characters
     . "title varchar(255) NOT NULL,"
-
+    // The post is text
     . " post text NOT NULL,"
-
+    // Our Primary key is "id"
+    // The way tables are connected to each other
     . "PRIMARY KEY (id) )");
  // Closes the connection
  $connection->close();

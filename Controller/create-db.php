@@ -5,7 +5,7 @@
  $connection = new mysqli($host, $username, $password);
  // Checks if their is an error, if so, echos it out.
  if ($connection->connect_error) {
- 	die("Error: " . $connection->connect_error);
+ 	die("<p>Error: " . $connection->connect_error . "</p>");
  }
   // Selects the database
   $exists = $connection->select_db($database);
@@ -15,7 +15,7 @@
    	$query = $connection->query("CREATE DATABASE $database");
     // Checks if the database has been created and outputs and echo saying so.
    	if ($query) {
-	  echo "Successfully created a database: " . $database;     
+	  echo "<p>Successfully created a database: " . $database . "</p>";     
    	}
    }
    // Echos out a statement saying that a Database already exists.
@@ -36,4 +36,11 @@
     // The way tables are connected to each other
     . "PRIMARY KEY (id) )");
  // Closes the connection
+
+   if ($query) {
+    echo "<p>Successfully create table: posts</p>";
+   }
+   else{
+     echo "<p>$connection->error</p>";
+   }
  $connection->close();

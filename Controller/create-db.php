@@ -15,6 +15,7 @@
    	$query = $connection->query("CREATE DATABASE $database");
     // Checks if the database has been created and outputs and echo saying so.
    	if ($query) {
+    // Put the echo in paragraph tag
 	  echo "<p>Successfully created a database: " . $database . "</p>";     
    	}
    }
@@ -38,9 +39,11 @@
  // Closes the connection
 
    if ($query) {
+    // Makes a table called posts
     echo "<p>Successfully create table: posts</p>";
    }
    else{
+    //  If the page is refreshed, it'll display the error.
      echo "<p>$connection->error</p>";
    }
  $connection->close();

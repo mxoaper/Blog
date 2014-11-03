@@ -16,4 +16,8 @@
  <!-- The area for the user to type in what they want to say -->
  	<textarea name="post"></textarea>
  </div>
+
+ <div>
+ 	<button type= "submit">Submit</button>
+ </div>
 </form>

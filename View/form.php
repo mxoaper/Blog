@@ -18,6 +18,7 @@
  </div>
 
  <div>
+ <!-- Button tag called Submit with the type being submit -->
  	<button type= "submit">Submit</button>
  </div>
 </form>

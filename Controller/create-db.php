@@ -21,7 +21,7 @@
    }
    // Echos out a statement saying that a Database already exists.
    else{
-   	echo "Database already exists.";
+   	echo "<p>Database already exists.</p>";
    }
 // Created a query, and it creates a table
 // Tables name is Post

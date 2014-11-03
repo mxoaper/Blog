@@ -1,7 +1,11 @@
+<?php  
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
 <h1>Create Blog Post</h1>
 
 <!-- Creates a form -->
-<form>
+<form method = "post" action = "<?php echo $path . "controller/create-post.php"; ?>">
 <!-- Needs 2 Text Boxs (2 Divs) -->
  <div>
  <!-- Will be able to input text for what the Title will be  -->

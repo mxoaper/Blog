@@ -1,5 +1,7 @@
 <?php 
+// Requires databse.php inside this file
 	require_once(__DIR__ . "/../model/database.php");
+
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 

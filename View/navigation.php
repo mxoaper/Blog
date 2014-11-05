@@ -6,6 +6,6 @@ require_once(__DIR__ . "/../model/config.php");
 <nav>
  <ul>
  <!-- php text inside an anchor, echoes out $path varible which holds location for post.php -->
- <li><a href="<?php echo $path . "post.php" ?>">Blog Post Form</a></li>
+ <li><a href="<?php echo $path . "post.php" ?>">The Blog Post Forum!</a></li>
  </ul>
 </nav>

@@ -2,7 +2,8 @@
 <html>
  <head>
  	<meta charset="UTF-8">
-	<title></title>
+	<title>My BLOG!</title>
+
  </head>
  <body>
 

@@ -7,11 +7,11 @@ body {
 @media (max-width: 320px) {
 	body{
 	/*Makes my background red when using an iPhone or such device*/
-	background-color: red;
+	background-color: #00FFFF;
     }
 }	
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
 	body{
 /*Makes my background for iPads lime color*/
 	background-color: lime;

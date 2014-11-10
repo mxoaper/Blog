@@ -1,11 +1,11 @@
 body {
-	/*background-image: url("images/bkg.jpg");*/
-	background-color: lime;
+	background-image: url("images/bkg.jpg");
+	
 }
 /*Makes my Blog mobile friendly for phones*/
 @media (max-width: 320px) {
-	html body{
-/*Makes my background red when using an iPhone or such device*/
+	body{
+	/*Makes my background red when using an iPhone or such device*/
 	background-color: red;
     }
 }	

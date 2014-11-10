@@ -1,6 +1,6 @@
 <?php 
 // Requires databse.php inside this file
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 // Established a connection to my database.php
 	$connection = new mysqli($host, $username, $password, $database);
 

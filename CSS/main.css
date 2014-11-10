@@ -1,5 +1,6 @@
 body {
-	background-image: url("images/bkg.jpg");
+
+	background-color: blue;
 	
 }
 /*Makes my Blog mobile friendly for phones*/
@@ -7,5 +8,12 @@ body {
 	body{
 	/*Makes my background red when using an iPhone or such device*/
 	background-color: red;
+    }
+}	
+
+@media (max-width: 1024px) {
+	body{
+
+	background-color: lime;
     }
 }	

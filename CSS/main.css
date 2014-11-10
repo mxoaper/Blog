@@ -1,5 +1,5 @@
 body {
-
+/*Makes my background for my blog blue*/
 	background-color: blue;
 	
 }
@@ -13,7 +13,7 @@ body {
 
 @media (max-width: 1024px) {
 	body{
-
+/*Makes my background for iPads lime color*/
 	background-color: lime;
     }
 }	

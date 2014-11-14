@@ -1,0 +1,20 @@
+body {
+/*Makes my background for my blog blue*/
+	background-color: blue;
+	
+}
+/*Makes my Blog mobile friendly for phones*/
+/*The second query caps the limit of what could be considered a smartphone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body{
+	/*Makes my background blue-ish when using an iPhone or such device*/
+	background-color: #00FFFF;
+    }
+}	
+/*The second media query caps the limit of what could be considered an iPad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	body{
+/*Makes my background for iPads lime color*/
+	background-color: lime;
+    }
+}	

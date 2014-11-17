@@ -8,4 +8,3 @@ class Database {
 	private $password;
 	private $database;
 }
-?>

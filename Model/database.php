@@ -17,6 +17,7 @@ class Database {
 
 	}
 // Function that opens the connection
+// Afunction is a block of code that can be called at any point after it has been declared
 	public function openConnection(){
 		this->connection = new mysqli($this->host, this->username, this->password, this->database);
 

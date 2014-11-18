@@ -36,6 +36,16 @@ class Database {
 	}
 // Creates a query
 	public function query($string){
+		// Calls on the openConnection function which runs the lines of code in it.
+		// Basically, we opened the connection
+		$this->openConnection();
 
+		// Queried the Database
+		$query = $this->connection->query($string);
+
+		// We closed the conncection
+		$this->closeConnection();
+
+		return $query;
 	}
 }

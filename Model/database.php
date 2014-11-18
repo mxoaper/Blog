@@ -27,7 +27,11 @@ class Database {
 	}
 // Fucntion to close the connection
 	public function closeConnection(){
-
+		// Checkis whether or not the variable has been set or not
+		if (isset($this->connection)) {
+			// My new close function
+			$this->connection->close();
+		}
 	}
 // Creates a query
 	public function query($string){

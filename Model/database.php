@@ -18,7 +18,12 @@ class Database {
 	}
 // Function that opens the connection
 	public function openConnection(){
+		this->connection = new mysqli($this->host, this->username, this->password, this->database);
 
+// Checks if their is an error, if so, echos it out.
+ 	if ($this->connection->connect_error) {
+ 		die("<p>Error: " . $this->connection->connect_error . "</p>");
+ }
 	}
 // Fucntion to close the connection
 	public function closeConnection(){

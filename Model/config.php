@@ -7,4 +7,7 @@
  	$username = "root";
  	$password = "root";
  	$database = "blog_db"; 
+
+ 	// Makes a new connection to the database
+ 	$connection = new Database($host,$username, $password, $database);
  

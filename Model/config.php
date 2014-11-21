@@ -1,6 +1,7 @@
 <?php
 // Requires 
 require_once(__DIR__ . "/database.php");
+session_start();
 // Path for post.php, easier to change location
 	$path = "/blog/";
 
@@ -10,6 +11,10 @@ require_once(__DIR__ . "/database.php");
  	$password = "root";
  	$database = "blog_db"; 
 
- 	// Makes a new connection to the database
- 	$connection = new Database($host,$username, $password, $database);
- 
+ 	// If the session variable has not been set, then it will create the databse object and sets it to our session variable
+ 	if(!isset($_SESSION["connection"])){
+	 	// Makes a new connection to the database
+	 	$connection = new Database($host,$username, $password, $database);
+	 	// Assigning the connection varible to the Session Varibale called Connection
+	 	$_SESSION["connection"] = $connection;
+    }

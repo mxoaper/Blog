@@ -1,4 +1,6 @@
 <?php
+// Requires 
+require_once(__DIR__ . "/database.php");
 // Path for post.php, easier to change location
 	$path = "/blog/";
 

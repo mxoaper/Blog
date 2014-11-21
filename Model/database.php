@@ -7,6 +7,7 @@ class Database {
 	private $username;
 	private $password;
 	private $database;
+	public $error;
 
 // piece of code that can be reused again and again in substitution for the actual Class
 	public function __construct($host, $username, $password, $database){
@@ -64,6 +65,10 @@ class Database {
 
 		// Queried the Database
 		$query = $this->connection->query($string);
+
+		if (!$query) {
+			$this->error = $this->connection->error;
+		}
 
 		// We closed the conncection
 		$this->closeConnection();

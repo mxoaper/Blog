@@ -8,7 +8,7 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
 // Made a query which inserts the post and sets the title of the post into my database
-	$query = $connection->query("INSERT INTO posts SET title = '$title' , post = '$post'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title' , post = '$post'");
 
 // If Succesfull at submitting post, echoes out its success
 	if ($query) {
@@ -16,5 +16,5 @@
 	}
 // If not successfull at submitting the post, it will echo out the error
 	else {
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}

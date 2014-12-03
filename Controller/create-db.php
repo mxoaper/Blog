@@ -17,6 +17,7 @@
     . "PRIMARY KEY (id) )");
  
  
+   // Checks if the query was successful or not.
    if ($query) {
     // Makes a table called posts
     echo "<p>Successfully create table: posts</p>";
@@ -25,3 +26,21 @@
     //  If the page is refreshed, it'll display the error.
      echo "<p>" . $_SESSION["connection"]->error . "</p>";
    }
+
+   // Creates a table called Users
+   $query = $_SESSION["connection"] ->query("CREATE TABLE users ("
+    . "id int(11) NOT NULL AUTO_INCREMENT, "
+    .  "username varchar(30) NOT NULL,"
+    . "email varchar(50) NOT NULL,"
+    . "password char(128) NOT NULL,"
+    . "salt char(128) NOT NULL,"
+    . "PRIMARY KEY (id))");
+
+   // Checks if the table users was successful or not
+  if($query) {
+    echo "<p>Succesfully created table users</p>";  
+  }
+  // Echoes out any error if not successful
+  else {
+    echo "<p>" . $_SESSION["connection"] -> error . "</p>";
+  }

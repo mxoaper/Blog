@@ -19,7 +19,7 @@
 		// Echoes out the success of the user's post
 		echo "<p>Successfully inserted post: $title</p>";
 		//Echoes out the date that the user's post was posted and the time
-		echo "Posted on; " . $date->format("M/D/Y") . "at " . $time->format(":i");
+		echo "Posted on; " . $date->format("M/D" . " " . "d/Y") . "at " . $time->format("G:i");
 	}
 // If not successfull at submitting the post, it will echo out the error
 	else {

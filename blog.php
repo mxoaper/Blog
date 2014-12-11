@@ -1,3 +1,4 @@
+
 <body>
 <?php
 // Requires header.php in the blog

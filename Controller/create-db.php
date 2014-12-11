@@ -12,6 +12,8 @@
     . "title varchar(255) NOT NULL,"
     // The post is text
     . " post text NOT NULL,"
+    // Representation of the data and time, also not null
+    . "DateTime datetime NOT NULL , "
     // Our Primary key is "id"
     // The way tables are connected to each other
     . "PRIMARY KEY (id) )");

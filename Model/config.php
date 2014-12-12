@@ -1,11 +1,14 @@
 <?php
-// Requires 
-require_once(__DIR__ . "/database.php");
-session_start();
-// Path for post.php, easier to change location
+	// Requires 
+	require_once(__DIR__ . "/database.php");
+	session_start();
+	// Continously regenerates the id of the session so hackers can not hi-jack it
+	session_regenerate_id(true);
+
+	// Path for post.php, easier to change location
 	$path = "/blog/";
 
-// The varibles for $... from database.php to config.php to make it much easier to modify them
+	// The varibles for $... from database.php to config.php to make it much easier to modify them
 	$host = "localhost";
  	$username = "root";
  	$password = "root";

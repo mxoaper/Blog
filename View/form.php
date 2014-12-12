@@ -1,7 +1,19 @@
-<?php  
+<?php
+	// Requires config.php inside this file
 	require_once(__DIR__ . "/../model/config.php");
-?>
+	// Requires login-verify.php inside this file
+	require_once(__DIR__ . "/../controller/login-verify.php");
 
+	// If not authenticated, redirect the user, then kill the program
+	if (!authenticateUser()) {
+		// Redirects non - authenticated user to my blog instead of post.php
+		header("Location: " . $path . "blog.php");
+		// Kills the program
+		die();
+	}
+
+?>
+<!-- Header -->
 <h1>Create Blog Post</h1>
 
 <!-- Creates a form -->

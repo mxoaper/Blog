@@ -9,5 +9,7 @@
  require_once(__DIR__ . "/controller/create-db.php");
  // Requires footer.php in the blog
  require_once(__DIR__ . "/view/footer.php");
+ // Requires read-posts.php in the blog
+ require_once(__DIR__ . "/controller/read-posts.php");
 ?>
 </body>

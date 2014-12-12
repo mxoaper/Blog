@@ -1,5 +1,5 @@
 <?php
-	// Requires 
+	// Requires the database.php inside this file
 	require_once(__DIR__ . "/database.php");
 	session_start();
 	// Continously regenerates the id of the session so hackers can not hi-jack it

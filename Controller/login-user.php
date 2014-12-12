@@ -8,7 +8,7 @@
 	// Selects the salt and password form the users table where the username is the username sent via the post 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
 
-	if($query->num_rows === 1) {
+	if($query->num_rows == 1) {
 		$row = $query->fetch_array();
 
 		if ($row["password"] === crypt($password, $row["salt"])) {

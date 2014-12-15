@@ -7,7 +7,7 @@
 <h1>Register</h1>
 
 <!-- Creates a post -->
-<form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">">
+<form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
 	<div>
 		<!-- Labled Email and you'll be able to input your email -->
 		<label for="email">Email : </label>

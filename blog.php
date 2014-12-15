@@ -1,9 +1,9 @@
 <body>
 <?php
-// Requires login-verify.php in the blog
-require_once(__DIR__ . "/controller/login-verify.php");
 // Requires header.php in the blog
 require_once(__DIR__ . "/view/header.php");
+// Requires login-verify.php in the blog
+require_once(__DIR__ . "/controller/login-verify.php");
 // This If statement will only run if the user has been authenticated or not
 if(authenticateUser()) {
 	//  Requires navigation.php in the blog

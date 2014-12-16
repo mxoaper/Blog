@@ -34,11 +34,6 @@ class Database {
 		  echo "<p>Successfully created a database: " . $database . "</p>";     
 	   	}
 	   }
-	   // Commented out because non - necessary
-	   // // Echoes out a statement saying that a Database already exists.
-	   // else{
-	   // 	echo "<p>Database already exists.</p>";
-	   // }
 	}
 // Function that opens the connection
 // Afunction is a block of code that can be called at any point after it has been declared

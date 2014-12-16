@@ -38,11 +38,3 @@
     . "salt char(128) NOT NULL,"
     . "PRIMARY KEY (id))");
 
-   // Checks if the table users was successful or not
-  if($query) {
-    echo "<p>Succesfully created table users</p>";  
-  }
-  // Echoes out any error if not successful
-  else {
-    echo "<p>" . $_SESSION["connection"] -> error . "</p>";
-  }

@@ -1,8 +1,13 @@
 body {
 /*Makes my background for my blog blue*/
 	background-color: blue;
-	
+}	
+.post{
+	border: 3px solid white;
+	border-radius: 25px;
 }
+
+
 /*Makes my Blog mobile friendly for phones*/
 /*The second query caps the limit of what could be considered a smartphone*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

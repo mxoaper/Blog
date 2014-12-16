@@ -18,17 +18,6 @@
     // The way tables are connected to each other
     . "PRIMARY KEY (id) )");
  
- 
-   // Checks if the query was successful or not.
-   if ($query) {
-    // Makes a table called posts
-    echo "<p>Successfully create table: posts</p>";
-   }
-   else{
-    //  If the page is refreshed, it'll display the error.
-     echo "<p>" . $_SESSION["connection"]->error . "</p>";
-   }
-
    // Creates a table called Users
    $query = $_SESSION["connection"] ->query("CREATE TABLE users ("
     . "id int(11) NOT NULL AUTO_INCREMENT, "

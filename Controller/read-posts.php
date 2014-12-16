@@ -7,11 +7,13 @@
 
 	if($result){
 		while($row = mysqli_fetch_array($result)) {
-			echo "<div class ='post'>";
+			echo "<section class ='post'>";
+			echo "<div class = 'posts'>";
 			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br />";
 			echo "<p>" . $row['post'] . "</h1>";
 			echo "<br/>";
-			echo "</div";
+			echo "</div>";
+			echo "</section>";
 		}
 	}

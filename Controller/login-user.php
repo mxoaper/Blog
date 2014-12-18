@@ -16,7 +16,6 @@
 			$_SESSION["authenticated"] = true;
 			// Redirects back to the blog
 			header("Location: " . $path . "blog.php");
-			
 		}		
 		else {
 			// Echoes to the user that his given information wasn't correct

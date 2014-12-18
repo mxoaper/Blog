@@ -3,8 +3,12 @@ body {
 	background-color: blue;
 }	
 .post{
-	border: 3px solid white;
+	border: 2px solid white;
 	border-radius: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 220px;
+	width: 600px;
 }
 
 

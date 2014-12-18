@@ -14,8 +14,9 @@
 		if ($row["password"] === crypt($password, $row["salt"])) {
 			// Created a mechanism to make sure the user has been authenticated
 			$_SESSION["authenticated"] = true;
-			// Echoes to the user that the login was successful
-			echo "<p>Login Successful!</p>";
+			// Redirects back to the blog
+			header("Location: " . $path . "blog.php");
+			
 		}		
 		else {
 			// Echoes to the user that his given information wasn't correct
@@ -25,4 +26,4 @@
 	else {
 		// Echoes to the user that his given information wasn't correct
 		echo "<p>Invalid username and password</p>";
-	} 
+	}

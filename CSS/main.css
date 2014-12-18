@@ -9,6 +9,12 @@ body {
 	padding-right: 5px;
 	height: 220px;
 	width: 600px;
+	margin-left: 5px;
+}
+
+}
+.readmore-js-section {
+  overflow: hidden;
 }
 
 
@@ -26,4 +32,4 @@ body {
 /*Makes my background for iPads lime color*/
 	background-color: lime;
     }
-}	
+}
